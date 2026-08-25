@@ -1,7 +1,7 @@
 <script setup>
 import {ref} from 'vue'
 
-const name= ref('')
+const studentName= ref('')
 const StudentID = ref('')
 const Email = ref('')
 const Course = ref('')
@@ -13,7 +13,7 @@ const Reason = ref('')
 
 <template>
     <form @submit.prevent="submitForm">
-        <input v-model="name" type="text" placeholder="Enter your Student Name" /><br>
+        <input v-model="studentName" type="text" placeholder="Enter your Student Name" /><br>
         <input v-model="StudentID" type="text" placeholder="Enter your Student ID" /><br>
         <input v-model="Email" type="email" placeholder="Enter your Email" /><br>
         <select v-model="Course">
@@ -31,8 +31,8 @@ const Reason = ref('')
         <button type="submit">Submit</button>
     </form>
 
-    <h4>Name: {{ field }} </h4>
-    <h4>Student Name: {{ StudentName }} </h4>
+
+    <h4>Student Name: {{ studentName }} </h4>
     <h4>Student ID: {{ StudentID }} </h4>
     <h4>Email: {{ Email }} </h4>
     <h4>Course: {{ Course }} </h4>
