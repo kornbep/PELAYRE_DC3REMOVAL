@@ -1,4 +1,4 @@
-<script setup>
+<!-- <script setup>
 import { ref } from 'vue'
 import StudentForm from './StudentForm.vue'
 import StudentDisplay from './StudentDisplay.vue'
@@ -26,4 +26,18 @@ function receiveStudent(data) {
     :course="student.course"
     :year-level="student.yearLevel"
   />
+</template> -->
+
+<template>
+  <div>
+    <nav>
+      <RouterLink to="/">Home</RouterLink>
+      |
+      <RouterLink to="/task">Task</RouterLink>
+      |
+      <RouterLink to="/about">About</RouterLink>
+    </nav>
+    <br>
+    <RouterView />
+  </div>
 </template>
